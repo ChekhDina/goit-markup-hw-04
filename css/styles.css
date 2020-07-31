@@ -12,6 +12,8 @@ body {
   --title-light-theme-color: #212121;
   --title-dark-theme-color: #ffffff;
   --title-dark-theme-color: #f5f4fa;
+  --hero-gradient-1: rgba(47, 48, 58, 0.8);
+  --hero-gradient-2: rgba(47, 48, 58, 0.8);
 }
 html {
   box-sizing: border-box;
@@ -30,6 +32,7 @@ html {
 .list {
   list-style: none;
 }
+/*HEADER*/
 .container {
   display: flex;
   justify-content: space-between;
@@ -154,15 +157,20 @@ html {
 
 /*HERO*/
 .hero-section {
-  background-color: rgba(47, 48, 58, 0.8);
   height: 100%;
 }
 
 .hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/header.jpg);
   text-align: center;
-  background-image: url(../img/header.jpg);
   background-position: center;
   height: 600px;
+  width: 1600px;
 }
 .hero-title {
   margin-top: 0;
@@ -338,6 +346,9 @@ html {
   background-color: #ffffff;
   width: 270px;
   height: 422px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .social-links {
@@ -490,7 +501,9 @@ html {
   color: #ffffff;
 }
 /*PORTFOLIO*/
-
+.header.basic-line {
+  border-bottom: 1px solid #ececec;
+}
 .filter {
   width: 1200px;
   margin: 0 auto;
@@ -559,7 +572,6 @@ html {
 }
 .portfolio-poster {
   display: block;
-
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
