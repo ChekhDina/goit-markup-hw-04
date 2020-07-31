@@ -111,6 +111,15 @@ html {
 .navigation-list-item-email-tel {
   display: flex;
 }
+.active-page::after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-bottom: 28px;
+  height: 5px;
+  background-color: #2196f3;
+  border-radius: 3px;
+}
 .header-address {
   display: flex;
   font-style: normal;
@@ -151,7 +160,7 @@ html {
 
 .hero {
   text-align: center;
-  background-image: url(../img/Header.svg);
+  background-image: url(../img/header.jpg);
   background-position: center;
   height: 600px;
 }
