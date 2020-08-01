@@ -134,9 +134,10 @@ html {
 .navigation-list-item-email-tel:not(:last-child) {
   margin-right: 30px;
 }
-
-.header-email,
-.header-tel {
+.navigation-list-item-email-tel:hover .svg-link-email {
+  fill: #2196f3;
+}
+.header-email {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -147,16 +148,8 @@ html {
   color: #757575;
 }
 .header-email:hover,
-.header-email:focus,
-.header-tel:hover,
-.header-tel:focus {
+.header-email:focus {
   color: #2196f3;
-}
-.svg-link-tel {
-  fill: #2196f3;
-}
-.header-tel {
-  text-transform: uppercase;
 }
 
 /*HERO*/
