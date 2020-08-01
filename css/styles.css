@@ -95,8 +95,11 @@ html {
   color: #2196f3;
 }
 
-/*navigation:email,tel*/
-
+/*navigation:{email,tel*/
+.svg-link-email,
+.svg-link-tel {
+  margin-right: 10px;
+}
 .header .container {
   align-items: center;
   justify-content: space-between;
@@ -134,9 +137,8 @@ html {
 
 .header-email,
 .header-tel {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -150,7 +152,9 @@ html {
 .header-tel:focus {
   color: #2196f3;
 }
-
+.svg-link-tel {
+  fill: #2196f3;
+}
 .header-tel {
   text-transform: uppercase;
 }
@@ -356,6 +360,29 @@ html {
   justify-content: space-around;
   padding: 0;
 }
+.social-link-list-item:hover .social-svg,
+.social-link-list-item:focus .social-svg {
+  fill: #ffffff;
+}
+.social-link-list-item:hover,
+.social-link-list-item:focus {
+  background-color: #2196f3;
+}
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-link-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .team-img {
   margin-bottom: 30px;
 }
@@ -425,20 +452,16 @@ html {
 .customers-list:not(:last-child) {
   margin-right: 30px;
 }
-.customers-list {
-  justify-content: space-between;
-  border: 1px solid #afb1b8;
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.customers-img {
-  padding-bottom: 19px;
-  padding-top: 19px;
-  padding-right: 65px;
-  padding-left: 65px;
-}
-
 /*FOOTER*/
 .footer {
   display: block;
