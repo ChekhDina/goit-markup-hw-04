@@ -117,15 +117,7 @@ html {
 .navigation-list-item-email-tel {
   display: flex;
 }
-.active-page::after {
-  content: '';
-  display: block;
-  position: absolute;
-  margin-bottom: 28px;
-  height: 5px;
-  background-color: #2196f3;
-  border-radius: 3px;
-}
+
 .header-address {
   display: flex;
   font-style: normal;
@@ -134,9 +126,11 @@ html {
 .navigation-list-item-email-tel:not(:last-child) {
   margin-right: 30px;
 }
-.navigation-list-item-email-tel:hover .svg-link-email {
+.navigation-list-item-email-tel:hover .svg-link-email,
+.navigation-list-item-email-tel:focus.svg-link-email {
   fill: #2196f3;
 }
+
 .header-email {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -452,6 +446,7 @@ html {
 .customers-list-link:hover {
   border-color: #2196f3;
 }
+
 .customers-list-link:hover .customers-svg {
   fill: #2196f3;
 }
