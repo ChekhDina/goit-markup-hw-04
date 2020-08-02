@@ -98,6 +98,7 @@ html {
 /*navigation:{email,tel*/
 .svg-link-email,
 .svg-link-tel {
+  fill: #757575;
   margin-right: 10px;
 }
 .header .container {
