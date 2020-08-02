@@ -294,7 +294,7 @@ html {
   padding-top: 27px;
   padding-bottom: 27px;
   min-width: 370px;
-  height: 70px;
+
   top: 1428px;
   position: absolute;
 }
@@ -424,6 +424,7 @@ html {
   color: #757575;
 }
 /*CUSTOMERS*/
+
 .costomers-team {
   width: 1200px;
   margin: 0 auto;
@@ -442,8 +443,17 @@ html {
   margin: 0;
   display: flex;
 }
+.customers-svg {
+  fill: #afb1b8;
+}
 .customers-list:not(:last-child) {
   margin-right: 30px;
+}
+.customers-list-link:hover {
+  border-color: #2196f3;
+}
+.customers-list-link:hover .customers-svg {
+  fill: #2196f3;
 }
 
 .customers-list-link {
@@ -497,7 +507,27 @@ html {
   margin: 0;
   justify-content: space-between;
 }
-
+.social-link-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.social-svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.social-link-list-items:hover {
+  background-color: #2196f3;
+}
 .add {
   display: block;
   margin-bottom: 20px;
@@ -507,10 +537,11 @@ html {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
-
   color: #ffffff;
+}
+.footer-main {
+  align-items: baseline;
 }
 .footer-address-link:hover,
 .footer-address-link :focus {
@@ -611,13 +642,10 @@ html {
 }
 .portfolio-description {
   margin: 0;
-
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 .footer-address-link {
