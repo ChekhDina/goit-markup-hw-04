@@ -131,7 +131,7 @@ html {
   margin-right: 30px;
 }
 .navigation-list-item-email-tel:hover .svg-link-email,
-.navigation-list-item-email-tel:focus.svg-link-email {
+.navigation-list-item-email-tel:focus .svg-link-email {
   fill: #2196f3;
 }
 
@@ -447,11 +447,13 @@ html {
 .customers-list:not(:last-child) {
   margin-right: 30px;
 }
-.customers-list-link:hover {
+.customers-list-link:hover,
+.customers-list-link:focus {
   border-color: #2196f3;
 }
 
-.customers-list-link:hover .customers-svg {
+.customers-list-link:hover .customers-svg,
+.customers-list-link:focus .customers-svg {
   fill: #2196f3;
 }
 
@@ -524,7 +526,8 @@ html {
   height: 20px;
   fill: #ffffff;
 }
-.social-link-list-items:hover {
+.social-link-list-items:hover,
+.social-link-list-items:focus {
   background-color: #2196f3;
 }
 .add {
