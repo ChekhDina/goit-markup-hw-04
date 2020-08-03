@@ -24,6 +24,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
+.active-page::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
 
 .link {
   text-decoration: none;
@@ -99,7 +107,6 @@ html {
 .svg-link-email,
 .svg-link-tel {
   fill: #757575;
-  margin-right: 10px;
 }
 .header .container {
   align-items: center;
@@ -165,12 +172,13 @@ html {
   text-align: center;
   background-position: center;
   height: 600px;
-  width: 1600px;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -211,13 +219,17 @@ html {
   padding-bottom: 25px;
   padding-left: 100px;
 }
-
-.section {
-  width: 1200px;
+.section-feature {
   display: block;
-  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 47px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -256,17 +268,17 @@ html {
 /*EXAMPLE */
 .section-example {
   width: 1200px;
-  margin: 0 auto;
-  padding-top: 47px;
-  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .example {
-  align-items: center;
-  display: block;
-  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .example-title {
   width: 1200px;
@@ -279,6 +291,7 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .example-list-item:not(:last-child) {
   margin-right: 30px;
@@ -291,9 +304,9 @@ html {
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
-  min-width: 370px;
+  width: 370px;
+  bottom: 0;
 
-  top: 1428px;
   position: absolute;
 }
 .example-img {
@@ -316,14 +329,18 @@ html {
   color: #ffffff;
 }
 /*OUR TEAM*/
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .our-team {
   width: 1200px;
-  display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .team-title {
   margin-top: 0;
@@ -422,14 +439,18 @@ html {
   color: #757575;
 }
 /*CUSTOMERS*/
-
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .costomers-team {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .customers-title {
   margin-top: 0;
@@ -447,13 +468,11 @@ html {
 .customers-list:not(:last-child) {
   margin-right: 30px;
 }
-.customers-list-link:hover,
-.customers-list-link:focus {
+.customers-list-link:hover {
   border-color: #2196f3;
 }
 
-.customers-list-link:hover .customers-svg,
-.customers-list-link:focus .customers-svg {
+.customers-list-link:hover .customers-svg {
   fill: #2196f3;
 }
 
@@ -526,8 +545,7 @@ html {
   height: 20px;
   fill: #ffffff;
 }
-.social-link-list-items:hover,
-.social-link-list-items:focus {
+.social-link-list-items:hover {
   background-color: #2196f3;
 }
 .add {
@@ -612,7 +630,10 @@ html {
   margin: 0;
   padding: 0;
 }
-
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
